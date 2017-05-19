@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/ao_iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shadow" />
+
+                <include layout="@layout/toolbar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/left_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/ao_container_text"
+                    android:layout_alignTop="@+id/ao_container_text"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/divider_oval" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ao_container_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/left_divider"
+                    android:layout_toRightOf="@+id/left_divider"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ao_tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_light"
+                            android:textSize="18sp"
+                            tools:text="Многофункциональная арена" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/ao_tv_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_light"
+                                android:textSize="18sp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_toLeftOf="@+id/ao_btn_map"
+                                android:layout_toStartOf="@+id/ao_btn_map"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                tools:text="Ледяной куб" />
+                            <Button
+                                android:id="@+id/ao_btn_map"
+                                style="@style/Widget.Button"
+                                android:layout_width="100dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:drawableLeft="@mipmap/ic_map"
+                                android:drawableStart="@mipmap/ic_map"
+                                android:drawablePadding="4dp"
+                                android:text="@string/label_map" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/label_capacity"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/ao_tv_capacity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:textSize="14sp"
+                                tools:text="3000 зрителей" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ao_tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        tools:text="С 16 по 31 января на базе конгрессно-выставочного центра «Патриот» (Московская область) пройдут учебно-тренировочные сборы спортивной команды ЦСКА по скалолазанию. «Сборы в «Патриоте» пройдут на уникальном скалодроме, созданном специально для III зимних Всемирных военных игр в Сочи. Его высота 15 метров, ширина 12 метров, навис над основанием 7 метров, т.е. отклонение составляет порядка 30 градусов. Именно на этом скалодроме спортсменам предстоит отработать две дисциплины скалолазания из трех, представленных в программе Всемирных военных игр: «трудность» и «боулдеринг», – прокомментировал старший тренер …" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

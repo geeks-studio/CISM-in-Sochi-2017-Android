@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:id="@+id/left_divider"
+        android:layout_width="28dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/divider" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/divider_oval" />
+
+        <View
+            android:id="@+id/is_bottom_line"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/divider" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ir_tv_place"
+        android:layout_width="28dp"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/left_divider"
+        android:layout_toRightOf="@+id/left_divider"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="1" />
+
+    <ImageView
+        android:id="@+id/ir_iv_country"
+        android:layout_width="48dp"
+        android:layout_centerVertical="true"
+        android:layout_height="48dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@null"
+        android:layout_toRightOf="@+id/ir_tv_place"
+        android:layout_toEndOf="@+id/ir_tv_place" />
+
+    <TextView
+        android:id="@+id/ir_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/ir_iv_country"
+        android:layout_toLeftOf="@+id/ir_tv_score"
+        android:layout_toRightOf="@+id/ir_iv_country"
+        android:layout_toStartOf="@+id/ir_tv_score"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/text_light"
+        android:textSize="18sp"
+        tools:text="Хрен Сгорович" />
+
+    <TextView
+        android:id="@+id/ir_tv_score"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        tools:text="25" />
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:background="@color/divider" />
+
+</RelativeLayout>

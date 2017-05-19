@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#1e5fa7</color>
+    <color name="colorAccent">#9E4343</color>
+    <color name="colorYellow">#BFAA46</color>
+
+    <color name="divider">#FFCCCCCC</color>
+    <color name="shadow">#77000000</color>
+
+    <color name="text_dark">#FFFFFFFF</color>
+    <color name="text_dark_second">#9eaff6</color>
+    <color name="text_light">#292f39</color>
+    <color name="text_dark_not_selected">#AAFFFFFF</color>
+</resources>

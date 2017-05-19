@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/menu_group_nav_drawer_primary"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_schedule"
+            android:title="@string/label_schedule"
+            app:actionLayout="@layout/action_layout_nav_item_counter"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/nav_results"
+            android:title="@string/label_results" />
+
+        <item
+            android:id="@+id/nav_objects"
+            android:title="@string/label_objects" />
+
+        <item
+            android:id="@+id/nav_army"
+            android:title="@string/label_army" />
+
+        <item
+            android:id="@+id/nav_news"
+            android:checked="true"
+            android:title="@string/label_news" />
+
+        <item
+            android:id="@+id/nav_quiz"
+            android:title="@string/label_quiz" />
+
+        <item
+            android:id="@+id/nav_video"
+            android:visible="false"
+            android:title="@string/label_video" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:title="@string/label_chat" />
+
+        <item
+            android:id="@+id/nav_cism"
+            android:title="@string/label_cism" />
+
+        <item
+            android:id="@+id/nav_social"
+            android:title="@string/label_social" />
+    </group>
+</menu>

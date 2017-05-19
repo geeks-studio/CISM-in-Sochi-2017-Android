@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="container" type="id" />
+    <item name="container_fragments" type="id" />
+    <item name="container_refresh" type="id" />
+    <item name="container_scroll" type="id" />
+    <item name="container_toolbar" type="id" />
+    <item name="container_list" type="id" />
+    <item name="container_image" type="id" />
+    <item name="stub" type="id" />
+    <item name="view_pager" type="id" />
+    <item name="tab_layout" type="id" />
+
+    <item name="nav_drawer" type="id" />
+    <item name="nav_drawer_view" type="id" />
+    <item name="nav_drawer_header" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="fab" type="id" />
+
+    <item name="divider" type="id" />
+    <item name="progress" type="id" />
+    <item name="space" type="id" />
+
+    <item name="space_status_bar" type="id" />
+    <item name="space_nav_bar" type="id" />
+
+    <item name="shadow" type="id" />
+
+    <item name="image" type="id" />
+
+</resources>

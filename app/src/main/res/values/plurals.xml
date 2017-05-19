@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="label_ago_years">
+        <item quantity="one">Год назад</item>
+        <item quantity="two">%d года назад</item>
+        <item quantity="few">%d года назад</item>
+        <item quantity="other">%d лет назад</item>
+    </plurals>
+
+    <plurals name="label_ago_months">
+        <item quantity="one">Месяц назад</item>
+        <item quantity="two">%d месяца назад</item>
+        <item quantity="few">%d месяца назад</item>
+        <item quantity="other">%d месяцев назад</item>
+    </plurals>
+
+    <plurals name="label_ago_days">
+        <item quantity="one">День назад</item>
+        <item quantity="two">%d дня назад</item>
+        <item quantity="few">%d дня назад</item>
+        <item quantity="other">%d дней назад</item>
+    </plurals>
+
+    <plurals name="label_ago_hours">
+        <item quantity="one">Час назад</item>
+        <item quantity="two">%d часа назад</item>
+        <item quantity="few">%d часа назад</item>
+        <item quantity="other">%d часов назад</item>
+    </plurals>
+
+    <plurals name="label_ago_minutes">
+        <item quantity="one">Минуту назад</item>
+        <item quantity="two">%d минуты назад</item>
+        <item quantity="few">%d минуты назад</item>
+        <item quantity="other">%d минут назад</item>
+    </plurals>
+
+    <plurals name="label_ru_capacity">
+        <item quantity="one">%d зритель</item>
+        <item quantity="two">%d зрителя</item>
+        <item quantity="few">%d зрителя</item>
+        <item quantity="other">%d зрителей</item>
+    </plurals>
+
+    <plurals name="label_en_capacity">
+        <item quantity="one">%d viewer</item>
+        <item quantity="other">%d viewers</item>
+    </plurals>
+
+
+    <string name="label_just_now">Только что</string>
+
+</resources>

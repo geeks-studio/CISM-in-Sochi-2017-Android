@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/an_iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:id="@+id/an_v_shadow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shadow"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/an_tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/an_tv_time"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="64dp"
+                    android:maxLines="4"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/an_tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@mipmap/ic_clock"
+                    android:drawablePadding="16dp"
+                    android:drawableStart="@mipmap/ic_clock"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <include layout="@layout/toolbar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/left_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/an_container_text"
+                    android:layout_alignTop="@+id/an_container_text"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/divider_oval" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/an_container_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_toEndOf="@+id/left_divider"
+                    android:layout_toRightOf="@+id/left_divider"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/an_tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        tools:text="С 16 по 31 января на базе конгрессно-выставочного центра «Патриот» (Московская область) пройдут учебно-тренировочные сборы спортивной команды ЦСКА по скалолазанию. «Сборы в «Патриоте» пройдут на уникальном скалодроме, созданном специально для III зимних Всемирных военных игр в Сочи. Его высота 15 метров, ширина 12 метров, навис над основанием 7 метров, т.е. отклонение составляет порядка 30 градусов. Именно на этом скалодроме спортсменам предстоит отработать две дисциплины скалолазания из трех, представленных в программе Всемирных военных игр: «трудность» и «боулдеринг», – прокомментировал старший тренер …" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

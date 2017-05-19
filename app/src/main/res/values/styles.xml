@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.DarkPopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+
+    <style name="Widget.TextView" parent="@android:style/Widget.TextView" />
+
+    <style name="Widget.TextView.Counter">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/bg_notification</item>
+    </style>
+
+    <style name="Widget.Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">?colorPrimaryDark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@mipmap/image"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/nhm_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nhm_tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tools:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="\u00B0"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="C"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/nhm_iv_temp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/img_weather_801" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:scaleType="fitStart"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:src="@mipmap/ic_logo_menu"
+        android:layout_above="@+id/nhm_language"
+        android:layout_gravity="bottom" />
+
+    <LinearLayout
+        android:id="@+id/nhm_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nhm_tv_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:textSize="17sp"
+            android:drawableLeft="@drawable/ic_en_menu"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_en_menu"
+            android:text="@string/label_english_short"
+            android:textColor="@color/text_dark_not_selected" />
+
+        <TextView
+            android:id="@+id/nhm_tv_ru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_ru_menu"
+            android:drawablePadding="8dp"
+            android:textSize="17sp"
+            android:drawableStart="@drawable/ic_ru_menu"
+            android:text="@string/label_russian_short"
+            android:textColor="@color/text_dark_not_selected" />
+
+    </LinearLayout>
+
+</RelativeLayout>

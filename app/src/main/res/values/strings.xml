@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">CISM 2017 in Sochi</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">CISM SOCHI 2017</string>
+
+    <string name="label_select_language">Select language</string>
+
+    <string name="label_russian">Русский</string>
+    <string name="label_english">English</string>
+
+    <string name="label_russian_short">Рус</string>
+    <string name="label_english_short">Eng</string>
+
+    <string name="label_news">News</string>
+    <string name="label_schedule">Schedule</string>
+    <string name="label_objects">Objects</string>
+    <string name="label_results">Kinds of Sports &amp; Countries</string>
+    <string name="label_video">Translation</string>
+    <string name="label_accreditation">Accreditation</string>
+    <string name="label_quiz">Quest</string>
+    <string name="label_chat">Chat</string>
+    <string name="label_cism">All about CISM</string>
+    <string name="label_army">Medal standings</string>
+    <string name="label_social">Social networks</string>
+    <string name="label_exit">Exit</string>
+
+    <string name="label_wait_for_it">Wait_for_it…</string>
+
+    <string name="label_ok">OK</string>
+    <string name="label_delete">Delete</string>
+    <string name="label_select">Select</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="label_map">Map</string>
+
+    <string name="label_capacity">Capacity: </string>
+    <string name="label_what_happened">What passes: </string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="label_go_google">Open in Google maps</string>
+    <string name="label_go_yandex">Open in Yandex Maps</string>
+
+    <string name="label_february">February 2017</string>
+
+    <string name="label_monday">Mon</string>
+    <string name="label_tuesday">Tue</string>
+    <string name="label_wednesday">Wed</string>
+    <string name="label_thursday">Thu</string>
+    <string name="label_friday">Fri</string>
+    <string name="label_saturday">Sat</string>
+    <string name="label_sunday">Sun</string>
+
+    <string name="label_place">Location: </string>
+    <string name="label_search">Search</string>
+
+    <string name="label_score_place">Place</string>
+    <string name="label_country">Country</string>
+    <string name="label_name">Name</string>
+    <string name="label_score">Score</string>
+
+    <string name="label_connection_error">Check the connection to the internet, please</string>
+    <string name="label_event">Sport</string>
+    <string name="label_contest">Competition</string>
+
+    <string name="label_select_event_and_content">Select a sport and competition</string>
+    <string name="label_select_event">Select a sport</string>
+
+    <string name="label_twitter">Twitter</string>
+    <string name="label_facebook">Facebook</string>
+    <string name="label_vk">Vkontakte</string>
+    <string name="label_odnoclassniki">Odnoklassniki</string>
+    <string name="label_instagram">Instagram</string>
+
+    <string name="label_participating_countries">Country participants</string>
+
+</resources>
